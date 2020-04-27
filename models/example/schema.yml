@@ -19,3 +19,18 @@ models:
             tests:
                 - unique
                 - not_null
+    
+    - name: third
+      description: "Testing the possibility of referencing a table from another schema"
+      columns:
+          - name: created_time
+            tests:
+              - not_null
+          - name: message
+          - name: permalink_url
+          - name: id
+            tests:
+              - not_null
+          - name: attachment_type
+          - name: attachment_url
+          - name: attachment_title
