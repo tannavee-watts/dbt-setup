@@ -32,6 +32,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   fishtown:
-      # Applies to all files under models/example/
-      example:
+      # Applies to all files under models/model_1/
+      model_1:
           materialized: view

@@ -1,3 +1,12 @@
+{{
+    config(
+        materialized='table',
+        unique_key='order_id',
+        dist='created_at',
+        sort=['created_at']
+    )
+}}
+
 WITH addresses AS (
     SELECT * FROM {{ ref ('addresses')}}
 ),
