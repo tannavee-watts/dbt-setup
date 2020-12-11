@@ -1,0 +1,1 @@
+SELECT * FROM `fa--interview-task.interview.devices` d 
